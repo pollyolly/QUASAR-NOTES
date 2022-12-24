@@ -34,3 +34,8 @@ eslint: {
       //errors: true //Comment
     },
 ```
+### Layout and Alignment
+```
+https://quasar.dev/style/spacing#table-of-permutations
+i.e: q-pr-md (q-padding-right-midium)
+```
