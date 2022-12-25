@@ -39,3 +39,17 @@ eslint: {
 https://quasar.dev/style/spacing#table-of-permutations
 i.e: q-pr-md (q-padding-right-midium)
 ```
+### Installing Quasar Plugins
+[Notify Plugin](https://quasar.dev/quasar-plugins/notify#introduction)
+```
+// Quasar CLI
+// quasar.config.js
+framework: {
+      config: {
+        notify: {}
+      },
+      plugins: [
+        'Notify' //Notify plugin
+      ]
+    },
+```
