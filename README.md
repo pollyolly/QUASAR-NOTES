@@ -56,6 +56,9 @@ framework: {
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
 
+### State Mngt. Pinia in Quasar
+[Quasar Pinia](https://quasar.dev/quasar-cli-webpack/state-management-with-pinia)
+
 ### Quasar Tutorial
 [Learn Quasar Components](https://www.youtube.com/playlist?list=PLFZAa7EupbB7xC-C0YwYk7aXIAbHYX1Xl)
 
