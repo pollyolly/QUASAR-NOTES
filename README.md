@@ -58,6 +58,8 @@ framework: {
 $quasar new store store_name
 * This will automatically install Pinia and create store in src/stores/store_name.js
 ```
+### Quasar Sample Applications
+[Quasar Samples](https://github.com/quasarframework/quasar-awesome)
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
 
