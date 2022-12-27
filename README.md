@@ -53,7 +53,7 @@ framework: {
       ]
     },
 ```
-### Create Store Pinia
+### Use State Management Pinia
 ```
 $quasar new store store_name
 * This will automatically install Pinia and create store in src/stores/store_name.js
