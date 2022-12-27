@@ -60,6 +60,11 @@ $quasar new store store_name
 ```
 ### Quasar Sample Applications
 [Quasar Samples](https://github.com/quasarframework/quasar-awesome)
+
+[Crpool 3d](https://carpol.picktype.com/v/truck#0ae093d8-39d9-4b01-81df-303161d33158)
+```
+https://threejs.org/
+```
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
 
