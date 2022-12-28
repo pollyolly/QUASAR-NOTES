@@ -65,7 +65,7 @@ $quasar new store store_name
 ```
 https://threejs.org/
 ```
-### Vue2 Old Docu
+### Vue2 Old Best Docu
 ```
 https://v2.vuejs.org/v2/api/#watch
 ```
