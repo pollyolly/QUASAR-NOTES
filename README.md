@@ -67,17 +67,15 @@ https://threejs.org/
 ```
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
-
 ### State Mngt. Pinia in Quasar
 [Quasar Pinia](https://quasar.dev/quasar-cli-webpack/state-management-with-pinia)
-
 ### Pinia
 [Pinia Statemanegement](https://pinia.vuejs.org/core-concepts/#setup-stores)
-
+### Pinia and Vuex
+[Pinia and Vuex](https://blog.logrocket.com/complex-vue-3-state-management-pinia/#configuring-the-router)
 ### Quasar Tutorial
 [Learn Quasar Components](https://www.youtube.com/playlist?list=PLFZAa7EupbB7xC-C0YwYk7aXIAbHYX1Xl)
 
 [PWA Quasar Laravel API](https://www.youtube.com/playlist?list=PL3pX4NAc7vJswKOWNO2kVobd-b2RiOOlY)
-
 ### Vue Tutorial
 [Vue Tutorial](https://vuejs.org/examples/#hello-world)
