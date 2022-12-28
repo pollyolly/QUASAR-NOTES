@@ -71,6 +71,9 @@ https://threejs.org/
 ### State Mngt. Pinia in Quasar
 [Quasar Pinia](https://quasar.dev/quasar-cli-webpack/state-management-with-pinia)
 
+### Pinia
+[Pinia Statemanegement](https://pinia.vuejs.org/core-concepts/#setup-stores)
+
 ### Quasar Tutorial
 [Learn Quasar Components](https://www.youtube.com/playlist?list=PLFZAa7EupbB7xC-C0YwYk7aXIAbHYX1Xl)
 
