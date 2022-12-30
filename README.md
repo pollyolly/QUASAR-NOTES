@@ -84,6 +84,8 @@ https://threejs.org/
 [PWA Quasar Laravel API](https://www.youtube.com/playlist?list=PL3pX4NAc7vJswKOWNO2kVobd-b2RiOOlY)
 
 [Quasar QTable API Pagination, Loading, Sorting](https://www.youtube.com/watch?v=jnwdEtrdRuI)
+
+[Quasar QTable Server Side](https://quasar.dev/vue-components/table#server-side-pagination-filter-and-sorting)
 ### Vue Tutorial
 [Vue Tutorial](https://vuejs.org/examples/#hello-world)
 
