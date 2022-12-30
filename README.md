@@ -69,9 +69,7 @@ $quasar new store store_name
 https://threejs.org/
 ```
 ### Vue2 Old Best Docu
-```
-https://v2.vuejs.org/v2/api/#watch
-```
+[Vue2 Docu](https://v2.vuejs.org/v2/api/#watch)
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
 ### State Mngt. Pinia in Quasar
