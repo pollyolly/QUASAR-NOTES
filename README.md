@@ -86,3 +86,8 @@ https://threejs.org/
 [Quasar QTable API Pagination, Loading, Sorting](https://www.youtube.com/watch?v=jnwdEtrdRuI)
 ### Vue Tutorial
 [Vue Tutorial](https://vuejs.org/examples/#hello-world)
+
+### Rest API Security and HTML5
+[OWASP Rest API Sec](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+
+[HTML5 Sec](https://html5sec.org/)
