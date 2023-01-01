@@ -68,6 +68,18 @@ $quasar new store store_name
 ```
 https://threejs.org/
 ```
+### Qusar Apex Charts
+```
+https://github.com/patrickmonteiro/quasar-apexcharts/tree/master/src/boot
+//src/boot/apexcharts.js
+import VueApexCharts from 'vue3-apexcharts'
+import { boot } from 'quasar/wrappers'
+
+export default boot(({ app }) => {
+  app.use(VueApexCharts)
+})
+```
+
 ### Vue2 Old Best Docu
 [Vue2 Docu](https://v2.vuejs.org/v2/api/#watch)
 ### Handling Quasar Links
