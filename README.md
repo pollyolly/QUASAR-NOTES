@@ -56,6 +56,10 @@ framework: {
 ### Qusar Apex Charts
 [Quasar Charts](https://github.com/patrickmonteiro/quasar-apexcharts/tree/master/src/boot)
 ```
+npm install apexcharts --save
+npm install vue-apexcharts --save
+
+
 //src/boot/apexcharts.js
 import VueApexCharts from 'vue3-apexcharts'
 import { boot } from 'quasar/wrappers'
