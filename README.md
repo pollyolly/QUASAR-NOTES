@@ -91,6 +91,8 @@ https://threejs.org/
 ```
 ### Vue2 Old Best Docu
 [Vue2 Docu](https://v2.vuejs.org/v2/api/#watch)
+### Vuetify UI's Sample
+https://morioh.com/p/06de012d5316
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
 ### State Mngt. Pinia in Quasar
