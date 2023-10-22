@@ -1,7 +1,7 @@
 ## QUASAR
 
 ### Installation Linux & Windows
-```
+```vim
 $npm i -g @quasar/cli
 
 NodeJs:
@@ -12,18 +12,18 @@ NodeJs 14+
 ```
 
 ### Run Dev
-```
+```vim
 $npx quasar dev
 ```
 
 ### Migration From Linux to Windows
-```
+```vim
 Note: Do note copy the node_modules
 $cd quasar-app-folder
 $npm install
 ```
 ### Remove EsLint 
-```
+```vim
 app-folder/quasar.config.js
 eslint: {
       // fix: true,
@@ -35,13 +35,13 @@ eslint: {
     },
 ```
 ### Layout and Alignment
-```
+```vim
 https://quasar.dev/style/spacing#table-of-permutations
 i.e: q-pr-md (q-padding-right-midium)
 ```
 ### Installing Quasar Plugins
 [Notify Plugin](https://quasar.dev/quasar-plugins/notify#introduction)
-```
+```json
 // Quasar CLI
 // quasar.config.js
 framework: {
@@ -55,7 +55,7 @@ framework: {
 ```
 ### Qusar Apex Charts
 [Quasar Charts](https://github.com/patrickmonteiro/quasar-apexcharts/tree/master/src/boot)
-```
+```vim
 npm install apexcharts --save
 npm install vue-apexcharts --save
 
@@ -75,7 +75,7 @@ boot: [
     ],
 ```
 ### Use State Management Pinia
-```
+```vim
 $quasar new store store_name
 * This will automatically install Pinia and create store in src/stores/store_name.js
 ```
@@ -86,7 +86,7 @@ $quasar new store store_name
 [Quasar Samples](https://github.com/quasarframework/quasar-awesome)
 
 [Crpool 3d](https://carpol.picktype.com/v/truck#0ae093d8-39d9-4b01-81df-303161d33158)
-```
+```vim
 https://threejs.org/
 ```
 ### Vue2 Old Best Docu
