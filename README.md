@@ -1,27 +1,126 @@
 ## QUASAR
 
-### Installation Linux & Windows
-```vim
+### Craete Project Quasar
+```
+$npm init quasar@latest
+```
+```
+- App with Quasar Cli
+- Project folder: jmr-portfolio
+- Quasar v2 (Vue 3 | Latest and greatest)
+- Javascript
+- Quasar App CLI with Vite 6 (v2)
+- Package name: jmr-portfolio
+- Project product name: jmr-portfolio
+- Project description: jmr-portfolio
+- Composition API with <script setup>
+- Sass with SCSS syntax
+- State Management (Pinia)
+- Add Prettier for code formatting: n
+- Yes, use npm
+```
+### Install Quasar CLI
+```
 $npm i -g @quasar/cli
-
-NodeJs:
-https://nodejs.org/en/download/releases/
-
-Requirements:
-NodeJs 14+
 ```
-
-### Run Dev
-```vim
-$npx quasar dev
+### Run Project
 ```
-
-### Migration From Linux to Windows
-```vim
-Note: Do note copy the node_modules
-$cd quasar-app-folder
+$npm run dev
+```
+### Install Node modules
+```
 $npm install
 ```
+### Build Project
+```
+$quasar build -m <mode>
+
+Replace <mode> with one of the following:
+- spa (Single Page Application)
+- ssr (Server-Side Rendering)
+- pwa (Progressive Web App)
+- bex (Browser Extension)
+- cordova (for mobile apps with Cordova)
+- capacitor (for mobile apps with Capacitor)
+- electron (for desktop apps)
+```
+
+### Quasar Icons
+
+https://fonts.google.com/icons
+
+
+### Configuration
+Prevent Opening New Browser Tab
+```
+  <q-item
+    clickable
+    tag="a"
+    target="_self"
+    :href="props.link"
+  >
+  <!--  target="_blank" -->
+```
+#### Router Configuration
+Change the URL Path 
+```
+//quasar.config.js
+vueRouterMode: 'history', //http://localhost:9001/about
+               'hash',    //http://localhost:9001/#/about
+```
+Sample Route
+```
+//router/routes.js
+const routes = [
+  {
+    path: '/',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: 'about', component: () => import('pages/AboutPage.vue') },
+      { path: 'myprojects', component: () => import('pages/MyProjectsPage.vue') },
+      { path: 'resume', component: () => import('pages/ResumePage.vue') },
+      { path: 'contactme', component: () => import('pages/ContactMePage.vue') },
+    ]
+  }
+```
+Get Router Console Log
+```
+//router/index.js
+  Router.beforeEach((to, from, next)=>{
+    console.log(to);
+    document.title = to.name //Change Page Title
+    next();
+  })
+```
+Prevent Page Refresh
+```
+//src/components/EssentialLinks.vue
+ <!-- <q-item
+    clickable
+    tag="a"
+    target="_self"
+    :href="props.link"
+  > -->
+  <q-item
+    clickable
+    tag="router-link"
+    :to="props.link"
+```
+Access Route Values
+```
+ <q-toolbar-title>
+    {{ $route.name }}
+</q-toolbar-title>
+```
+### Helpful Links
+
+[Dynamic Page](https://www.youtube.com/watch?v=Pcrzy1f1fK4)
+
+[Quasar PWA Optimization](https://medium.com/simform-engineering/building-the-future-with-quasar-a-vue-js-framework-revolution-74b09723a91d)
+
+[Quasar Apex Charts](https://quasar-apexcharts.netlify.app/)
+
 ### Remove EsLint 
 ```vim
 app-folder/quasar.config.js
@@ -41,7 +140,7 @@ i.e: q-pr-md (q-padding-right-midium)
 ```
 ### Installing Quasar Plugins
 [Notify Plugin](https://quasar.dev/quasar-plugins/notify#introduction)
-```json
+```
 // Quasar CLI
 // quasar.config.js
 framework: {
@@ -85,14 +184,6 @@ $quasar new store store_name
 ### Quasar Sample Applications
 [Quasar Samples](https://github.com/quasarframework/quasar-awesome)
 
-[Crpool 3d](https://carpol.picktype.com/v/truck#0ae093d8-39d9-4b01-81df-303161d33158)
-```vim
-https://threejs.org/
-```
-### Vue2 Old Best Docu
-[Vue2 Docu](https://v2.vuejs.org/v2/api/#watch)
-### Vuetify UI's Sample
-https://morioh.com/p/06de012d5316
 ### Handling Quasar Links
 [Handling Links](https://quasar.dev/vue-components/button?search=1&test=1#Handling-links)
 ### State Mngt. Pinia in Quasar
@@ -109,10 +200,4 @@ https://morioh.com/p/06de012d5316
 [Quasar QTable API Pagination, Loading, Sorting](https://www.youtube.com/watch?v=jnwdEtrdRuI)
 
 [Quasar QTable Server Side](https://quasar.dev/vue-components/table#server-side-pagination-filter-and-sorting)
-### Vue Tutorial
-[Vue Tutorial](https://vuejs.org/examples/#hello-world)
 
-### Rest API Security and HTML5
-[OWASP Rest API Sec](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-
-[HTML5 Sec](https://html5sec.org/)
