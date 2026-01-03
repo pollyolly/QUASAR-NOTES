@@ -14,7 +14,7 @@ $npm init quasar@latest
 - Project product name: jmr-portfolio
 - Project description: jmr-portfolio
 - Composition API with <script setup>
-- Sass with SCSS syntax
+- Sass with SCSS syntax (We can disable this to enable CSS only)
 - State Management (Pinia)
 - Add Prettier for code formatting: n
 - Yes, use npm
