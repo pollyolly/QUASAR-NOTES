@@ -27,6 +27,10 @@ $npm i -g @quasar/cli
 ```
 $npm run dev
 ```
+or
+```
+$quasar dev
+```
 ### Install Node modules
 ```
 $npm install
