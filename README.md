@@ -106,9 +106,10 @@ Prevent Page Refresh
     target="_self"
     :href="props.link"
   > -->
+<!-- Quasar by default using Vue Router to use router-link -->
   <q-item
     clickable
-    tag="router-link"
+    tag="router-link" 
     :to="props.link"
 ```
 Access Route Values
