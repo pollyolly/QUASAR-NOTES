@@ -117,6 +117,15 @@ Access Route Values
     {{ $route.name }}
 </q-toolbar-title>
 ```
+### Troubleshoot
+Adding "fullscreen" class in q-page may cause q-item clickable not to work
+```
+<q-item clickable></q-item>
+```
+```
+<q-page class="fullscreen">
+</q-page>
+```
 ### Helpful Links
 
 [Dynamic Page](https://www.youtube.com/watch?v=Pcrzy1f1fK4)
