@@ -184,10 +184,12 @@ framework: {
 ```
 ### Qusar Apex Charts
 [Quasar Charts](https://github.com/patrickmonteiro/quasar-apexcharts/tree/master/src/boot)
+
+[Vue Apex Charts](https://github.com/apexcharts/vue3-apexcharts/tree/main)
+
 ```vim
 $npm install apexcharts --save
 $npm install vue-apexcharts --save or $npm install vue3-apexcharts
-
 
 //src/boot/apexcharts.js
 import VueApexCharts from 'vue3-apexcharts'
@@ -203,6 +205,45 @@ export default boot(({ app }) => {
 boot: [
       'apexcharts' //<apexcharts>.js
     ],
+```
+```
+<template>
+<div class="flex">
+  <usersGraph
+    width="500"
+    type="line"
+    :options="usersOptions"
+    :series="userSeries">
+  </usersGraph>
+</div>
+</template>
+<script>
+import VueApexCharts from 'vue3-apexcharts';
+
+export default {
+    components: {
+        usersGraph: VueApexCharts,
+    },
+    data: function () {
+    return {
+      usersOptions: {
+        chart: {
+          id: "usersgraph",
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug' ,'Sep', 'Oct', 'Nov', 'Dec'],
+        },
+      },
+      userSeries: [
+        {
+          name: "Users Per Month",
+          data: [30, 40, 35, 50, 49, 60, 70, 91, 78, 90, 34, 45],
+        },
+      ],
+    }
+  }
+}
+</script>
 ```
 ### Use State Management Pinia
 ```
