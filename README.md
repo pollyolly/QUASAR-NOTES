@@ -204,9 +204,11 @@ boot: [
     ],
 ```
 ### Use State Management Pinia
-```vim
+```
 $quasar new store store_name
-* This will automatically install Pinia and create store in src/stores/store_name.js
+```
+```
+This will automatically install Pinia and create store in src/stores/store_name.js
 ```
 ### Handling Quasar Table
 [Quasar QTable add/delete/update rows](https://codepen.io/mickey58/pen/eYYVqWv)
