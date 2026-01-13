@@ -38,7 +38,8 @@ $npm install
 ### Build Project
 ```
 $quasar build -m <mode>
-
+```
+```
 Replace <mode> with one of the following:
 - spa (Single Page Application)
 - ssr (Server-Side Rendering)
@@ -136,8 +137,10 @@ Adding "fullscreen" class in q-page may cause q-item clickable not to work
 [Quasar Apex Charts](https://quasar-apexcharts.netlify.app/)
 
 ### Remove EsLint 
-```vim
+```
 app-folder/quasar.config.js
+```
+```
 eslint: {
       // fix: true,
       // include = [],
@@ -160,8 +163,8 @@ import { Notify } from 'quasar';
 
 Notify.create({
     message: 'Form submitted successfully!',
-    color: 'green-4',
-    icon: 'check_circle',
+    color: 'green-4', //red-4
+    icon: 'check_circle', //cancel
     position: 'top'
 });
 ```
@@ -180,8 +183,8 @@ framework: {
 ### Qusar Apex Charts
 [Quasar Charts](https://github.com/patrickmonteiro/quasar-apexcharts/tree/master/src/boot)
 ```vim
-npm install apexcharts --save
-npm install vue-apexcharts --save
+$npm install apexcharts --save
+$npm install vue-apexcharts --save or $npm install vue3-apexcharts
 
 
 //src/boot/apexcharts.js
