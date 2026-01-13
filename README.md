@@ -155,11 +155,27 @@ i.e: q-pr-md (q-padding-right-midium)
 ### Installing Quasar Plugins
 [Notify Plugin](https://quasar.dev/quasar-plugins/notify#introduction)
 ```
+//File.vue
+import { Notify } from 'quasar';
+
+Notify.create({
+    message: 'Form submitted successfully!',
+    color: 'green-4',
+    icon: 'check_circle',
+    position: 'top'
+});
+```
+```
 // Quasar CLI
 // quasar.config.js
 framework: {
       config: {
-        notify: {}
+        notify: {
+          position: 'top-right',
+          timeout: 2500,
+          textColor: 'white',
+          actions: [{ icon: 'close', color: 'white' }]
+        }
       },
       plugins: [
         'Notify' //Notify plugin
