@@ -170,12 +170,7 @@ Notify.create({
 // quasar.config.js
 framework: {
       config: {
-        notify: {
-          position: 'top-right',
-          timeout: 2500,
-          textColor: 'white',
-          actions: [{ icon: 'close', color: 'white' }]
-        }
+        notify: {}
       },
       plugins: [
         'Notify' //Notify plugin
