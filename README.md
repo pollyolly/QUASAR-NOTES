@@ -194,8 +194,9 @@ import { boot } from 'quasar/wrappers'
 export default boot(({ app }) => {
   app.use(VueApexCharts)
 })
-
-//https://quasar.dev/quasar-cli-vite/boot-files#when-to-use-boot-files
+```
+[When to use boot file](https://quasar.dev/quasar-cli-vite/boot-files#when-to-use-boot-files)
+```
 //quasar.conf.js
 boot: [
       'apexcharts' //<apexcharts>.js
