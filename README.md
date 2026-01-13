@@ -173,7 +173,9 @@ Notify.create({
 // quasar.config.js
 framework: {
       config: {
-        notify: {}
+        notify: {
+          timeout:1000 //Timeout for notify to disappear
+        }
       },
       plugins: [
         'Notify' //Notify plugin
