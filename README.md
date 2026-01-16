@@ -245,7 +245,7 @@ export default {
 }
 </script>
 ```
-###Eventbus
+### Eventbus
 ```
 //bus.js
 
