@@ -245,6 +245,24 @@ export default {
 }
 </script>
 ```
+###Eventbus
+```
+//bus.js
+
+import { EventBus } from 'quasar';
+const bus = new EventBus() 
+export bus
+```
+```
+import Bus from 'bus.js';
+
+Bus.on('some-event', (arg1, arg2, arg3) => {
+ // do some work
+})
+
+Bus.emit('some-event', 'arg1', 'arg2', 'arg3')
+
+```
 ### Use State Management Pinia
 ```
 $quasar new store store_name
