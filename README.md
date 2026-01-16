@@ -267,6 +267,8 @@ This will automatically install Pinia and create store in src/stores/store_name.
 ### Pinia and Vuex
 [Pinia and Vuex](https://blog.logrocket.com/complex-vue-3-state-management-pinia/#configuring-the-router)
 ### Quasar Tutorial
+[Best Quasar Tutorial for All](https://www.youtube.com/watch?v=gxcSztHnxeY&list=PLAiDzIdBfy8iu_MZrq3IPuSFcRgCQ0iL0&index=8)
+
 [Learn Quasar Components](https://www.youtube.com/playlist?list=PLFZAa7EupbB7xC-C0YwYk7aXIAbHYX1Xl)
 
 [PWA Quasar Laravel API](https://www.youtube.com/playlist?list=PL3pX4NAc7vJswKOWNO2kVobd-b2RiOOlY)
