@@ -248,20 +248,17 @@ export default {
 ### Eventbus
 ```
 //bus.js
-
 import { EventBus } from 'quasar';
-const bus = new EventBus() 
-export bus
+const bus = new EventBus();
+export default bus;
 ```
 ```
-import Bus from 'bus.js';
+import Bus from 'src/utility/bus';
 
 Bus.on('some-event', (arg1, arg2, arg3) => {
  // do some work
-})
-
+});
 Bus.emit('some-event', 'arg1', 'arg2', 'arg3')
-
 ```
 ### Use State Management Pinia
 ```
