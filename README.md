@@ -246,6 +246,7 @@ export default {
 </script>
 ```
 ### Eventbus
+[Quasar EventBus](https://quasar.dev/quasar-utils/event-bus-util#introduction)
 ```
 //bus.js
 import { EventBus } from 'quasar';
@@ -262,20 +263,30 @@ Bus.emit('some-event', 'arg1', 'arg2', 'arg3')
 ```
 ### Props
 ```
-//Main.vue
+Props is syncing of data between two component (Child and Parent Component).
+i.e: When you call Component Parent and Component Child with their Props the data is always sync.
+```
+```
+//App.vue
 <template>
     <TitleComponent :ListData=ListData />
+    <button @click="onSubmit">Submit Title</button>
 </template>
 <script>
 import { ref } from 'vue';
-import TitleComponent from 'TitleComponent.vue';
+import TitleComponent from './TitleComponent.vue';
 const ListData = ref({});
-export defaul {
-  mounted(){
-     ListData.title = 'Testing';
-  },
-  setup(){
-     return {
+
+export default {
+    components: {
+      TitleComponent
+    },
+    setup(){
+      const onSubmit = () => {
+        ListData.value = {title: 'Testing'};
+      }
+      return {
+        onSubmit,
         ListData
      }
   }
@@ -285,7 +296,7 @@ export defaul {
 ```
 //TitleComponent.vue
 <template>
-   <h1>ListData.title</h1>
+   <h1>{{ ListData.title }}</h1>
 </template>
 <script>
 export default {
