@@ -260,6 +260,44 @@ Bus.on('some-event', (arg1, arg2, arg3) => {
 });
 Bus.emit('some-event', 'arg1', 'arg2', 'arg3')
 ```
+### Props
+```
+//Main.vue
+<template>
+    <TitleComponent :ListData=ListData />
+</template>
+<script>
+import { ref } from 'vue';
+import TitleComponent from 'TitleComponent.vue';
+const ListData = ref({});
+export defaul {
+  mounted(){
+     ListData.title = 'Testing';
+  },
+  setup(){
+     return {
+        ListData
+     }
+  }
+}
+</script>
+```
+```
+//TitleComponent.vue
+<template>
+   <h1>ListData.title</h1>
+</template>
+<script>
+export default {
+  props: {
+     ListData: {
+      type: Object,
+      required: false 
+     }
+   }
+}
+</script>
+```
 ### Use State Management Pinia
 ```
 $quasar new store store_name
