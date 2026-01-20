@@ -155,6 +155,45 @@ eslint: {
 ```vim
 Example: q-pr-md (q-padding-right-midium)
 ```
+### Dialog
+[QDialog](https://quasar.dev/vue-components/dialog/)
+```
+//Main.vue
+<template>
+    <div class="q-pa-sm">
+        <q-btn label="Show Title" color="primary" @click="onSubmit" />
+    </div>
+    <q-dialog v-model="showTitle" persistent>
+          <TitleComponent />
+    </q-dialog>
+</template>
+<script>
+import TitleComponent from 'src/components/TitleComponent';
+import { ref } from 'vue';
+const showTitle = ref(false);
+export default {
+   components:{
+      TitleComponent
+   },
+   setup(){
+       const onSubmit = () => {
+           showTitle.value = true;
+       }
+       return {
+          showTitle
+      }
+   }
+}
+</script>
+```
+```
+//TitleComponent.vue
+<template>
+   <h1>Hello World</h1>
+</template>
+<script>
+</script>
+```
 ### Installing Quasar Plugins
 [Notify Plugin](https://quasar.dev/quasar-plugins/notify#introduction)
 ```
