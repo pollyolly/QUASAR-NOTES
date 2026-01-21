@@ -105,13 +105,17 @@ import { ref, watch } from 'vue';
     const scrollAreaRef = ref(null);
     const messagetext = ref('');
     watch(messagetext,async ()=>{
-            const scrollTarget = scrollAreaRef.value.getScrollTarget();
-            const maxHeight = scrollTarget.scrollHeight;
-            // const duration = 2000;
-            // scrollAreaRef.value.setVerticalScrollPosition(maxHeight, duration);
-            scrollAreaRef.value.setScrollPosition('vertical', maxHeight, 0);
+        scrollToBottom();
     });
+    const scrollToBottom = () => {
+        const scrollTarget = scrollAreaRef.value.getScrollTarget();
+        const maxHeight = scrollTarget.scrollHeight;
+        scrollAreaRef.value.setScrollPosition('vertical', maxHeight, 0);
+    }
 export default {
+    mounted(){
+        scrollToBottom();
+    },
     setup(){
         return {
             messagetext,
