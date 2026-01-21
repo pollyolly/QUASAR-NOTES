@@ -367,6 +367,43 @@ export default defineBoot(({ app }) => {
 })
 export { axios, api }
 ```
+### Ajax Bar
+Note: ref="bar" will get empty if not loaded earlier
+```
+<template>
+        <q-ajax-bar
+            ref="bar"
+            position="top"
+            color="accent"
+            size="10px"
+            :delay="delay" 
+        />
+</template>
+<script>
+import { ref } from 'vue';
+    const bar = ref(0);
+    const delay = ref(3000);
+    const triggerLoading = () => {
+        const barRef = bar.value;
+        barRef.start();
+        setTimeout(()=>{
+            const barRef = bar.value;
+            if(barRef) {
+                barRef.stop();
+            }
+        }, Math.random() * 3000 + 1000);
+    }
+export default {
+  setup(){
+    return {
+      delay,
+      bar,
+      triggerLoading,
+    }
+  }
+}
+</script>
+```
 ### Use State Management Pinia
 ```
 $quasar new store store_name
