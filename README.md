@@ -1,4 +1,5 @@
 ## QUASAR
+<image src="https://github.com/pollyolly/QUASAR-NOTES/blob/main/bet-game-v1.png" height="350" />
 
 ### Craete Project Quasar
 ```
