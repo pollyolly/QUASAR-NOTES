@@ -368,7 +368,7 @@ export default defineBoot(({ app }) => {
 export { axios, api }
 ```
 ### Ajax Bar
-Note: ref="bar" will get empty if not loaded earlier
+Note: ref="bar" will get null if the page is loaded earlier this may cause rendering problem.
 ```
 <template>
         <q-ajax-bar
