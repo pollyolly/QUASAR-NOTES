@@ -56,8 +56,9 @@ $quasar build -m spa
 ```
 ```
 1. Create a git repository named betting-game-quasar.
-2. Copy the generate files inside betting-game-quasar/dist/spa/*
+2. Copy the generated files inside betting-game-quasar/dist/spa/*
 3. $cp betting-game-quasar/dist/spa/* betting-game-quasar/
+4. Sample Output: https://betting-game-quasar.vercel.app/
 ```
 ### Quasar Icons
 
