@@ -60,6 +60,8 @@ $quasar build -m spa
 3. $cp betting-game-quasar/dist/spa/* betting-game-quasar/
 4. Sample Output: https://betting-game-quasar.vercel.app/
 ```
+### Deploy with Nginx
+[Deploy SPA with NginX](https://quasar.dev/quasar-cli-vite/developing-spa/deploying)
 ### Quasar Icons
 
 https://fonts.google.com/icons
@@ -231,7 +233,7 @@ framework: {
       ]
     },
 ```
-### Qusar Apex Charts
+### Quasar Apex Charts
 [Quasar Charts](https://github.com/patrickmonteiro/quasar-apexcharts/tree/master/src/boot)
 
 [Vue Apex Charts](https://github.com/apexcharts/vue3-apexcharts/tree/main)
