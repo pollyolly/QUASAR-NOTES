@@ -58,7 +58,8 @@ $quasar build -m spa
 1. Create a git repository named betting-game-quasar.
 2. Copy the generated files inside betting-game-quasar/dist/spa/*
 3. $cp betting-game-quasar/dist/spa/* betting-game-quasar/
-4. Sample Output: https://betting-game-quasar.vercel.app/
+4. Deploy in vercel the git repository to vercel
+5. Sample Output: https://betting-game-quasar.vercel.app/
 ```
 ### Deploy with Nginx
 [Deploy SPA with NginX](https://quasar.dev/quasar-cli-vite/developing-spa/deploying)
