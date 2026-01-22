@@ -1,6 +1,9 @@
 ## QUASAR
 <image src="https://github.com/pollyolly/QUASAR-NOTES/blob/main/bet-game-v1.png" height="350" />
 
+### Project Link
+[Betting Game](https://betting-game-quasar.vercel.app/)
+
 ### Craete Project Quasar
 ```
 $npm init quasar@latest
