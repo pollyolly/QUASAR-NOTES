@@ -1,9 +1,13 @@
 const routes = [
   {
+    path: '/',
+    redirect: { name: 'Dashboard' } //Redirect Base URL to named router
+  },
+  {
     path: '/', component: () => import('layouts/MainLayout.vue'),
     children: [
       // { path: '', name: 'Home', component: () => import('pages/IndexPage.vue') },
-      { path: '', name: 'Dashboard' , component: () => import('pages/AdminDashboard.vue')},
+	  { path: '', name: 'Dashboard' , component: () => import('pages/AdminDashboard.vue')},
       { path: 'dashboard', name: 'Dashboard' , component: () => import('pages/AdminDashboard.vue')},
       { path: 'chat', name:'Chat', component: () => import('pages/AdminChat.vue')},
       { path: 'message', name: 'Message', component: () => import('pages/AdminMessages.vue')},

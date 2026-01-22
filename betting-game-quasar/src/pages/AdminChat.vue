@@ -1,12 +1,12 @@
 <template>
    <div class="flex">
-        <q-ajax-bar
+        <!-- <q-ajax-bar
             ref="bar"
             position="top"
             color="accent"
             size="10px"
             :delay="delay" 
-        />
+        /> -->
         <div class="q-pa-sm">
             <q-btn label="Add Chat" color="primary" @click="showAddForm = true" />
         </div>
@@ -138,18 +138,18 @@ const rows = [
     const showEditForm = ref(false);
     const showDeleteForm = ref(false);
     const deleteSelect = ref(null);
-    const bar = ref(0);
-    const delay = ref(3000);
-    const triggerLoading = () => {
-        const barRef = bar.value;
-        barRef.start();
-        setTimeout(()=>{
-            const barRef = bar.value;
-            if(barRef) {
-                barRef.stop();
-            }
-        }, Math.random() * 3000 + 1000);
-    }
+    // const bar = ref(0);
+    // const delay = ref(3000);
+    // const triggerLoading = () => {
+    //     const barRef = bar.value;
+    //     barRef.start();
+    //     setTimeout(()=>{
+    //         const barRef = bar.value;
+    //         if(barRef) {
+    //             barRef.stop();
+    //         }
+    //     }, Math.random() * 3000 + 1000);
+    // }
 export default {
     components:{
         AdminChatFormDelete,
@@ -161,14 +161,14 @@ export default {
             showEditForm.value = status;
             console.log('Event Bus', status);
             if(type == 'submit'){
-                triggerLoading();
+                // triggerLoading();
             }
         });
         bus.on('closeAddForm', (status, type) => {
             showAddForm.value = status;
             console.log('Event Bus', status);
             if(type == 'submit'){
-                triggerLoading();
+                // triggerLoading();
             }
         });
     },
@@ -194,9 +194,9 @@ export default {
         }
 
     return {
-        delay,
-        bar,
-        triggerLoading,
+        // delay,
+        // bar,
+        // triggerLoading,
         deleteSelect,
         showAddForm,
         showEditForm,
