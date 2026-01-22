@@ -50,7 +50,15 @@ Replace <mode> with one of the following:
 - capacitor (for mobile apps with Capacitor)
 - electron (for desktop apps)
 ```
-
+### Deploy in Vercel
+```
+$quasar build -m spa
+```
+```
+1. Create a git repository named betting-game-quasar.
+2. Copy the generate files inside betting-game-quasar/dist/spa/*
+3. $cp betting-game-quasar/dist/spa/* betting-game-quasar/
+```
 ### Quasar Icons
 
 https://fonts.google.com/icons
