@@ -91,14 +91,18 @@ Sample Route
 //router/routes.js
 const routes = [
   {
+     path: '/',
+     redirect: { name:'About' } //Redirect base url to 'About' url path
+  },
+  {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
-      { path: 'about', component: () => import('pages/AboutPage.vue') },
-      { path: 'myprojects', component: () => import('pages/MyProjectsPage.vue') },
-      { path: 'resume', component: () => import('pages/ResumePage.vue') },
-      { path: 'contactme', component: () => import('pages/ContactMePage.vue') },
+      { path: '', name: 'Index', component: () => import('pages/IndexPage.vue') },
+      { path: 'about', name:'About', component: () => import('pages/AboutPage.vue') },
+      { path: 'myprojects', name:'Myprojects', component: () => import('pages/MyProjectsPage.vue') },
+      { path: 'resume', name:'Resume', component: () => import('pages/ResumePage.vue') },
+      { path: 'contactme', name:'Contactme', component: () => import('pages/ContactMePage.vue') },
     ]
   }
 ```
