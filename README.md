@@ -412,6 +412,9 @@ $quasar new store store_name
 ```
 This will automatically install Pinia and create store in src/stores/store_name.js
 ```
+### Quasar File Upload
+[Quasar File Upload](https://quasar.dev/vue-components/uploader#nodejs)
+
 ### Handling Quasar Table
 [Quasar QTable add/delete/update rows](https://codepen.io/mickey58/pen/eYYVqWv)
 
