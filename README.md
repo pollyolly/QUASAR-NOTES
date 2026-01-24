@@ -54,6 +54,7 @@ Replace <mode> with one of the following:
 - electron (for desktop apps)
 ```
 ### Deploy in Vercel
+[Betting Game](https://betting-game-quasar.vercel.app/)
 ```
 $quasar build -m spa
 ```
